@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                fontFamily: {
+                    prism: ['Tilt Prism', 'sans-serif']
+                },
+                colors: {
+                    'chicagoBlue': '#bbdcf1',
+                    'chicagoRed': '#e93423',
+                    'bearsBlue': '#1e2c53',
+                    'bearsOrange': '#be5c23',
+                },
+            },
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+</head>
+
+
+<body>
+    <nav class="bg-white border-chicagoBlue bg-chicagoBlue">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center">
+                <span class="self-center text-3xl font-prism font-semibold whitespace-nowrap text-chicagoRed">Sal's
+                    Loop Blog</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-white md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-chicagoBlue">
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-bearsOrange rounded hover:bg-bearsBlue md:hover:bg-chicagoBlue md:border-0 md:hover:text-chicagoRed md:p-0"
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-bearsOrange rounded hover:bg-bearsBlue md:hover:bg-chicagoBlue md:border-0 md:hover:text-chicagoRed md:p-0">About</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-bearsOrange rounded hover:bg-bearsBlue md:hover:bg-chicagoBlue md:border-0 md:hover:text-chicagoRed md:p-0">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="block py-2 pl-3 pr-4 text-bearsOrange rounded hover:bg-bearsBlue md:hover:bg-chicagoBlue md:border-0 md:hover:text-chicagoRed md:p-0">Tags</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div
+        class="container h-64 w-auto md:mx-auto bg-[url('assets/chicago_flag_copy.jpeg')] bg-cover bg-no-repeat bg-center">
+    </div>
+
+    <div class="container flex justify-center">
+        <h2 class="uppercase font-semibold text-2xl text-chicagoRed underline underline-offset-4">
+            About this blog
+        </h2>
+    </div>
+
+    <div class="container">
+        <p class="mt-4 mx-5 leading-loose font-normal text-left text-base text-black">
+            Hi, I am Sal! I decided to do this blog to record my experiences in the loop as an office worker. Working in
+            the restaurant industry for over 15 years I was ready for a change. In 2022 I started to work towards that
+            change. The online program 100devs prepared me immensely and in 2023 I was blessed to be accepted into the
+            DPI Tech Apprenticeship program. It is a 3 month long paid program where I am taught various languages that
+            employers are utilizing. After the 3 months I am placed with a tech company as an apprentice to learn and
+            work hands on for 9 months. Hopefully at that point I am retained as a regular employee. Although I am
+            confident in my abilities, I do not want to take this opportunity for granted. So, I am here to try any
+            foodhall, lunch spot, coffee shop, juice bar, and happy hour bar in and around the loop area. Hopefully this
+            will not just be a 3 month long experience. Come along as I show you the best of what the loop has to offer
+            its workers!
+        </p>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
+
+</html>
